@@ -1,6 +1,6 @@
+  
+  <strong>Edit User:</strong><br><br>
 
- <strong>New User:</strong><br><br>
- 
   <%= form_with model: @user do |form| %>
 
     <% if @user.errors.any? %>
@@ -19,7 +19,5 @@
     <%= form.text_field :email %> <br>
     <%= form.label(:Password) %>
     <%= form.text_field :password  %> <br>
-    <%= form.submit "create" %>
+    <%= form.submit "Update" %>
   <% end %>
-
-
